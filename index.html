@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Simple_Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1 class="heading--main">SIMPLE CALCULATOR</h1>
+      <div class="container">
+        <form name="form">
+          <div class="display">
+            <input class="display" type="text" name="DisplayValue" />
+          </div>
+          <div class="buttons">
+            <div class="row">
+              <input
+                type="button"
+                name="seven"
+                class="button"
+                value="7"
+                onClick="insert(seven.value)"
+              />
+              <input
+                type="button"
+                name="eight"
+                class="button"
+                value="8"
+                onClick="insert(eight.value)"
+              />
+              <input
+                type="button"
+                name="nine"
+                class="button"
+                value="9"
+                onClick="insert(nine.value)"
+              />
+              <input
+                type="button"
+                name="plus"
+                class="button"
+                value="+"
+                onClick="insert(plus.value)"
+              />
+            </div>
+            <div class="row">
+              <input
+                type="button"
+                name="four"
+                class="button"
+                value="4"
+                onClick="insert(four.value)"
+              />
+              <input
+                type="button"
+                name="five"
+                class="button"
+                value="5"
+                onClick="insert(five.value)"
+              />
+              <input
+                type="button"
+                name="six"
+                class="button"
+                value="6"
+                onClick="insert(six.value)"
+              />
+              <input
+                type="button"
+                name="minus"
+                class="button"
+                value="-"
+                onClick="insert(minus.value)"
+              />
+            </div>
+            <div class="row">
+              <input
+                type="button"
+                name="one"
+                class="button"
+                value="1"
+                onClick="insert(one.value)"
+              />
+              <input
+                type="button"
+                name="two"
+                class="button"
+                value="2"
+                onClick="insert(two.value)"
+              />
+              <input
+                type="button"
+                name="three"
+                class="button"
+                value="3"
+                onClick="insert(three.value)"
+              />
+              <input
+                type="button"
+                name="ns"
+                class="button"
+                value="*"
+                onClick="insert(ns.value)"
+              />
+            </div>
+            <div class="row">
+              <input
+                type="button"
+                name="zero"
+                class="button"
+                value="0"
+                onClick="insert(zero.value)"
+              />
+              <input
+                type="button"
+                name="ls"
+                class="button"
+                value="."
+                onClick="insert(ls.value)"
+              />
+              <input
+                type="button"
+                name="ms"
+                class="button"
+                value="/"
+                onClick="insert(ms.value)"
+              />
+              <input
+                type="button"
+                name="ps"
+                class="button"
+                value="="
+                onClick="DisplayValue.value=eval(DisplayValue.value)"
+              />
+            </div>
+            <div class="row">
+              <input type="button" class="CLR" value="CLR" onClick="Clear()" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="cal.js" async defer></script>
+  </body>
+</html>
