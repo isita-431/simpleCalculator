@@ -3,5 +3,5 @@ function insert(element) {
 }
 
 function Clear() {
-  document.form.displayResult.value = null;
+  document.form.DisplayValue.value = null;
 }
